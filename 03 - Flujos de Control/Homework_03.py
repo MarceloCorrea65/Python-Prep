@@ -159,3 +159,18 @@ while (seguir):
 
 # 15) Crear un ciclo while que encuentre dentro del rango de 100 a 300 el primer número divisible por 3 y además múltiplo de 6
 
+inicial = 200
+final = 300
+divisible = 5
+multiplo = 9
+while(inicial < final) :
+    n3 = inicial
+    for n3 in range(inicial, final+1):
+        if (inicial % divisible == 0):
+            for n6 in range(n3, final+1):
+                if (n3 % multiplo == 0):
+                    final = inicial
+                    print('El número',n3,'es divisible por',divisible,'y múltiplo de',multiplo)
+                break
+        break
+    inicial +=1
